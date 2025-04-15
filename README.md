@@ -1,4 +1,4 @@
- **🏦 CryptoBank – Decentralized Banking on Ethereum**
+##🏦 CryptoBank – Decentralized Banking on Ethereum##
 [![License: LGPL-3.0](https://img.shields.io/badge/License-LGPL--3.0-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 **Secure Ether Deposits • Transparent Withdrawals • Configurable Fees**  
