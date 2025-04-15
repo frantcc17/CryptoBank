@@ -51,10 +51,10 @@ emit etherDeposit(msg.sender,msg.value);
 }
 //2.Withdraw
 function withdrawEther(uint256 amount_) external {
-    require (amount_ + fee <= userBalance[msg.sender],"Insufficient ether");
     uint256 feeAmount = (amount_*fee)/100;
+    require (amount_ + feeAmount <= userBalance[msg.sender],"Insufficient ether");
     uint256 totalAmount = amount_ + feeAmount;
-    require (userBalance[msg.sender] <= totalAmount, "Exeeds amount");
+    require (userBalance[msg.sender] <= totalAmount, "Exceeds amount");
     //Update state
     userBalance[msg.sender] -= totalAmount;
     //Transfer ether
